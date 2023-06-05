@@ -1,7 +1,11 @@
 @import '~bootstrap/scss/bootstrap';
 
+@import './general/variables';
+@import './general/mixin.scss';
+@import './general/typography';
+@import './general/general';
+@import './general/utilis';
+@import './general/header';
 
 
-body {
-    background-color: rgb(55, 0, 255);
-}
+

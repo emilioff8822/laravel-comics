@@ -1,18 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    @vite('resources/scss/app.scss')
-</head>
-
-<body>
-
-    <ul>
-        <li><a href="{{ route('comics') }}">Comics</a></li>
-        <li><a href="{{ route('movie') }}">Movie</a></li>
-        <li><a href="{{ route('tv') }}">TV</a></li>
-    </ul>
+<header class="container">
+    <div class="logo">
+        <img src="/img/dc-logo.png" alt="logo" />
+    </div>
+    <nav>
+        <ul>
+            <li><a href="{{ route('comics') }}">CHARACTERS</a></li>
+            <li><a href="{{ route('comics') }}">COMICS</a></li>
+            <li><a href="{{ route('movie') }}">MOVIES</a></li>
+            <li><a href="{{ route('tv') }}">TV</a></li>
+            <li><a href="{{ route('home') }}">GAMES</a></li>
+            <li><a href="{{ route('home') }}">COLLECTIBLES</a></li>
+            <li><a href="{{ route('home') }}">VIDEOS</a></li>
+            <li><a href="{{ route('home') }}">FANS</a></li>
+            <li><a href="{{ route('home') }}">SHOP</a></li>
+        </ul>
+    </nav>
+</header>

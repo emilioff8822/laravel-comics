@@ -1,0 +1,24 @@
+
+
+
+// @mixin ha un funzionamento simile ad una funzione, tramite @include può essere richiamato questo pezzatto di codice, che applica le regole specificate all'interno del mixin
+@mixin container{
+  width: 90%;
+  max-width: $container-width;
+  margin: 0 auto;
+}
+
+// In questo caso abbiamo creato un mixin che accetta in ingresso un parametro che viene chiamato "$type"
+// Centra in un elemento, default: both | horizontal | vertical
+@mixin centerFlex($type : "both"){
+  display: flex;
+  // Se $type è uguale a vertical, allora applichiamo questa regola, se è uguale a horizontal, applichiamo quello scritto dentro l'else if, se è uguale a both, applichiamo quello scritto dentro l'else if. Di default $type è uguale a both
+  @if $type == "vertical"{
+    align-items: center;
+  }@else if $type == "horizontal"{
+    justify-content: center;
+  }@else if $type == "both"{
+    justify-content: center;
+    align-items: center;
+  }
+}

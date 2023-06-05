@@ -1,0 +1,29 @@
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+@include container;
+
+}
+
+.container_blue{
+  @include container;
+  @include centerFlex;
+  background-color: $primary-color;
+  color: white;
+  h1 {
+    color: aliceblue;
+  }
+}
