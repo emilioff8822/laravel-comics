@@ -16,3 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/comics', function () {
+    return view('comics');
+})->name('comics');
+
+Route::get('/movie', function () {
+    return view('movie');
+})->name('movie');
+
+Route::get('/tv', function () {
+    return view('tv');
+})->name('tv');
