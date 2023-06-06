@@ -10,6 +10,14 @@ Route::get('/', function () use ($datax) {
     return view('home', compact('datax'));
 })->name('home');
 
+Route::get('/detail/{id}', function ($id) use ($datax) {
+    $detailData = $datax['cardsData'][$id];
+    // Passa sia $datax che $detailData alla vista
+    return view('detail', compact('detailData', 'datax'));
+})->name('detail');
+
+
+
 Route::get('/comics', function () use ($datax) {
     return view('comics', compact('datax'));
 })->name('comics');
