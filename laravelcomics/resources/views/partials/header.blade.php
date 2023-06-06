@@ -2,17 +2,19 @@
     <div class="logo">
         <img src="/img/dc-logo.png" alt="logo" />
     </div>
+    <h3>
+        {{ Route::currentRouteName() }}
+    </h3>
     <nav>
         <ul>
-            <li><a href="{{ route('comics') }}">CHARACTERS</a></li>
-            <li><a href="{{ route('comics') }}">COMICS</a></li>
-            <li><a href="{{ route('movie') }}">MOVIES</a></li>
-            <li><a href="{{ route('tv') }}">TV</a></li>
-            <li><a href="{{ route('home') }}">GAMES</a></li>
-            <li><a href="{{ route('home') }}">COLLECTIBLES</a></li>
-            <li><a href="{{ route('home') }}">VIDEOS</a></li>
-            <li><a href="{{ route('home') }}">FANS</a></li>
-            <li><a href="{{ route('home') }}">SHOP</a></li>
+            @foreach ($datax['mainMenu'] as $menu)
+                <li>
+                    <a class="{{ Route::currentRouteName() === $menu['routeName'] ? 'active' : '' }}"
+                        href="{{ route($menu['routeName']) }}">
+                        {{ $menu['text'] }}
+                    </a>
+                </li>
+            @endforeach
         </ul>
     </nav>
 </header>

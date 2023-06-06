@@ -1,4 +1,10 @@
-@include('partials.header')
+@extends('main')
+@section('content')
+    <div class="container">
+        <h1>COMICS</h1>
+        <div class="jumbotron">
 
+            <img class="logo" src="/img/jumbotron.jpg" alt="logo">
 
-<h1>Comics</h1>
+        </div>
+    @endsection

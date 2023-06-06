@@ -11,18 +11,18 @@
     <!-- Styles -->
     @vite('resources/js/app.js')
 
-    <title>Laravel Comics</title>
+    <title>Laravel Comics | @yield('title')</title>
 </head>
 
 <body>
     @include('partials.header')
 
 
-    <main class="bg-light">
 
-        @yield('content')
 
-    </main>
+    @yield('content')
+
+
 
     @include('partials.footer')
 

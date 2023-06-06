@@ -98,10 +98,14 @@ footer {
   .footer-item {
     display: flex;
     align-items: center;
+    flex-direction: row; // Aggiunto per allineare gli elementi orizzontalmente
+    justify-content: space-between; // Aggiunto per distribuire equamente gli elementi lungo l'asse orizzontale
+    flex-wrap: wrap; // Aggiunto per consentire agli elementi di andare a capo se non c'è abbastanza spazio sulla riga
   }
 
   .footer-image {
-    width: 15%;
+    width: 100px; // Ridotto la larghezza dell'immagine
+    height: auto; // Aggiunto per mantenere le proporzioni dell'immagine
     padding-top: 20px;
     padding-bottom: 20px;
     margin-right: 10px;

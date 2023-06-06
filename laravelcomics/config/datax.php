@@ -1,17 +1,17 @@
 <?php
 
 return [
-    'mainMenu' => [
-        ['href' => '#', 'text' => 'CHARACTERS', 'isActive' => false],
-        ['href' => '#', 'text' => 'COMICS', 'isActive' => false],
-        ['href' => '#', 'text' => 'MOVIES', 'isActive' => false],
-        ['href' => '#', 'text' => 'TV', 'isActive' => false],
-        ['href' => '#', 'text' => 'GAMES', 'isActive' => false],
-        ['href' => '#', 'text' => 'COLLECTIBLES', 'isActive' => false],
-        ['href' => '#', 'text' => 'VIDEOS', 'isActive' => false],
-        ['href' => '#', 'text' => 'FANS', 'isActive' => false],
-        ['href' => '#', 'text' => 'NEWS', 'isActive' => false],
-        ['href' => '#', 'text' => 'SHOP', 'isActive' => false],
+   'mainMenu' => [
+        ['routeName' => 'characters', 'text' => 'CHARACTERS', 'isActive' => false],
+        ['routeName' => 'comics', 'text' => 'COMICS', 'isActive' => false],
+        ['routeName' => 'movies', 'text' => 'MOVIES', 'isActive' => false],
+        ['routeName' => 'tv', 'text' => 'TV', 'isActive' => false],
+        ['routeName' => 'games', 'text' => 'GAMES', 'isActive' => false],
+        ['routeName' => 'collectibles', 'text' => 'COLLECTIBLES', 'isActive' => false],
+        ['routeName' => 'videos', 'text' => 'VIDEOS', 'isActive' => false],
+        ['routeName' => 'fans', 'text' => 'FANS', 'isActive' => false],
+        ['routeName' => 'news', 'text' => 'NEWS', 'isActive' => false],
+        ['routeName' => 'shop', 'text' => 'SHOP', 'isActive' => false],
     ],
     'footerMenu' => [
         'pastificio' => [
