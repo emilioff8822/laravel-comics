@@ -21,27 +21,27 @@ Route::get('/detail/{id}', function ($id) {
 
 
 Route::get('/comics', function () use ($datax) {
-    return view('comics', compact('datax'));
+    return view('layout.comics', compact('datax'));
 })->name('comics');
 
 Route::get('/movies', function () use ($datax) {
-    return view('movies', compact('datax'));
+    return view('layout.movies', compact('datax'));
 })->name('movies');
 
 Route::get('/tv', function () use ($datax) {
-    return view('tv', compact('datax'));
+    return view('layout.tv', compact('datax'));
 })->name('tv');
 
 Route::get('/characters', function () use ($datax) {
-    return view('characters', compact('datax'));
+    return view('layout.characters', compact('datax'));
 })->name('characters');
 
 Route::get('/games', function () use ($datax) {
-    return view('games', compact('datax'));
+    return view('layout.games', compact('datax'));
 })->name('games');
 
 Route::get('/collectibles', function () use ($datax) {
-    return view('collectibles', compact('datax'));
+    return view('layout.collectibles', compact('datax'));
 })->name('collectibles');
 
 Route::get('/videos', function () use ($datax) {
