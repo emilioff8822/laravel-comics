@@ -5,17 +5,19 @@ use Illuminate\Support\Facades\Route;
 // Usa config() per caricare 'datax.php'
 $datax = config('datax');
 
-Route::get('/', function () use ($datax) {
-    // Usa compact per passare i dati alla vista
+Route::get('/', function () {
+    $datax = config('datax');
     return view('home', compact('datax'));
 })->name('home');
 
-Route::get('/detail/{id}', function ($id) use ($datax) {
-    $detailData = $datax['cardsData'][$id];
-    // Passa sia $datax che $detailData alla vista
-    return view('detail', compact('detailData', 'datax'));
+Route::get('/detail/{id}', function ($id) {
+    $datax = config('datax');
+    if (array_key_exists($id, $datax['cardsData'])) {
+        $detailData = $datax['cardsData'][$id];
+        return view('detail', compact('detailData', 'datax'));
+    }
+    return redirect()->route('home');
 })->name('detail');
-
 
 
 Route::get('/comics', function () use ($datax) {

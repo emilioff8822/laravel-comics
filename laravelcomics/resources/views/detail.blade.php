@@ -10,7 +10,6 @@
                 <p>{{ $detailData['price'] }}</p>
                 <p>{{ $detailData['series'] }}</p>
                 <p>{{ $detailData['type'] }}</p>
-                <a href="{{ route('home') }}" class="btn btn-primary">Torna</a>
             </div>
         </div>
     </main>
